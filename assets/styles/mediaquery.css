@@ -1,0 +1,76 @@
+/* Estilos para dispositivos móviles (hasta 768px de ancho) */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px; /* Reducir el padding en dispositivos móviles */
+  }
+
+  .main {
+    flex-direction: column; /* Cambiar la dirección a columna */
+    gap: 20px; /* Reducir el espacio entre elementos */
+    padding: 10px; /* Reducir el padding */
+  }
+
+  .main-left {
+    width: 100%; /* Ocupar el 100% del ancho */
+    height: auto; /* Altura automática */
+    padding: 20px 10px; /* Ajustar el padding */
+    border-radius: 20px; /* Reducir el radio de borde */
+    gap: 20px; /* Reducir el espacio entre elementos */
+  }
+
+  .main-left-top {
+    gap: 15px; /* Reducir el espacio entre elementos */
+  }
+
+  .title {
+    font-size: 1.5rem; /* Reducir el tamaño del título */
+  }
+
+  .description {
+    font-size: 1rem; /* Reducir el tamaño de la descripción */
+  }
+
+  .main-left-bottom {
+    gap: 10px; /* Reducir el espacio entre elementos */
+  }
+
+  #toggleEncrypt {
+    width: 150px; /* Reducir el tamaño de la imagen */
+  }
+
+  .instruction {
+    font-size: 1rem; /* Reducir el tamaño de la instrucción */
+    width: 100%; /* Ocupar el 100% del ancho */
+  }
+
+  .main-right {
+    width: 100%; /* Ocupar el 100% del ancho */
+    padding: 10px; /* Ajustar el padding */
+  }
+
+  .form,
+  .result {
+    gap: 40px; /* Reducir el espacio entre elementos */
+  }
+
+  textarea,
+  .message-result {
+    width: 100%; /* Ocupar el 100% del ancho */
+    height: 200px; /* Reducir la altura */
+    padding: 20px; /* Ajustar el padding */
+    font-size: 1rem; /* Reducir el tamaño de la fuente */
+  }
+
+  .btn,
+  .btn-s {
+    width: 100%; /* Ocupar el 100% del ancho */
+    padding: 15px 20px; /* Ajustar el padding */
+    font-size: 1rem; /* Reducir el tamaño de la fuente */
+  }
+
+  .buttons {
+    flex-direction: column; /* Cambiar la dirección a columna */
+    gap: 10px; /* Reducir el espacio entre botones */
+    width: 80%; /* Ocupar el 100% del ancho */
+  }
+}

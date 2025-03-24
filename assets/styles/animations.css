@@ -1,0 +1,116 @@
+/* Animación de fade-in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Animación de fade-out */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Animación de slide-in desde la izquierda */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animación de slide-in desde la derecha */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Animación de slide-up */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animación de slide-down */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animación de pulsación (para botones o íconos) */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Aplicar animaciones a elementos específicos */
+
+/* Fade-in para el contenedor principal */
+.main {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Slide-in para el área izquierda */
+.main-left {
+  animation: slideInLeft 2s ease-in-out;
+}
+
+/* Slide-in para el área derecha */
+.main-right {
+  animation: slideInRight 2s ease-in-out;
+}
+
+/* Pulsación para botones al hacer hover */
+.btn-s:hover {
+  transition: box-shadow 0.5s ease, transform 0.5s ease; /* Transición suave */
+}
+
+/* Fade-in para el textarea */
+textarea {
+  animation: fadeIn 2s ease-in-out;
+}
+
+#toggleEncrypt {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#toggleEncrypt:hover {
+  transform: scale(1.1); /* Efecto de escala al hacer hover */
+}

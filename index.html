@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Encripta y desencripta mensajes de forma segura con esta herramienta online. Soporta letras, números y símbolos."
+    />
+    <meta
+      name="keywords"
+      content="encriptar mensajes, desencriptar mensajes, cifrado, seguridad, herramienta online"
+    />
+    <meta name="author" content="Tu Nombre" />
+    <meta
+      property="og:title"
+      content="Message Encryptor - Encripta y Desencripta Mensajes"
+    />
+    <meta
+      property="og:description"
+      content="Herramienta online para encriptar y desencriptar mensajes de forma segura."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tusitio.com" />
+    <title>Message Encryptor - Encripta y Desencripta Mensajes</title>
+    <!-- RemixIcon CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <link rel="stylesheet" href="assets/styles/animations.css" />
+    <link rel="stylesheet" href="assets/styles/mediaquery.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="main-left">
+        <div class="main-left-top">
+          <h1 class="title">🔐 Encriptador de Mensajes 🔐</h1>
+          <p class="description">
+            ¡Protege tus mensajes con cifrado tipo César!
+            <i class="ri-shield-check-line"></i>
+          </p>
+        </div>
+        <div class="main-left-bottom">
+          <img src="assets/img/lock.png" id="toggleEncrypt" alt="" />
+          <p class="instruction">
+            <i class="ri-information-line"></i> Toca sobre el candado para
+            cambiar entre cifrado y descifrado
+          </p>
+        </div>
+      </div>
+
+      <div class="main-right">
+        <div class="form">
+          <textarea
+            name="message"
+            id="message"
+            placeholder="✍️ Escribe tu mensaje aquí..."
+          ></textarea>
+          <button class="btn" id="action">🔒 Encriptar</button>
+        </div>
+        <div class="result">
+          <textarea class="message-result" id="message-result"></textarea>
+          <div class="buttons">
+            <button class="btn-s" id="copy">
+              <i class="ri-clipboard-line"></i> Copiar
+            </button>
+
+            <button class="btn" id="back">
+              <i class="ri-skip-back-line"></i> Volver
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="toast" class="toast" role="alert"></div>
+    <script src="assets/js/changeAction.js"></script>
+    <script src="assets/js/encrypt.js"></script>
+  </body>
+</html>
